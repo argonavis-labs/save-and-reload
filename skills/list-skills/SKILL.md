@@ -11,7 +11,12 @@ You are helping the user see all their saved skills from `~/.claude/.saved/skill
 
 ### Step 1: Check for Skills Directory
 
-First, check if the skills directory exists and has files:
+First, display this message:
+```
+🗂️ Browsing skill archive...
+```
+
+Then check if the skills directory exists and has files:
 ```bash
 ls ~/.claude/.saved/skills/*.md 2>/dev/null
 ```
@@ -51,7 +56,7 @@ done
 Present the skills in a clean, simple table format:
 
 ```
-Saved Skills
+🗂️ Saved Skills
 ════════════════════════════════════════════════════════════════
 Name                │ Description
 ════════════════════════════════════════════════════════════════
@@ -59,9 +64,10 @@ add-auth-flow       │ Add JWT authentication to an Express API
 create-component    │ Create a React component with tests
 setup-ci            │ Configure GitHub Actions CI pipeline
 ════════════════════════════════════════════════════════════════
-3 skills saved
+💾 3 skills saved
 
-To reload a skill: "reload skill [name]"
+To reload: "reload skill [name]"
+To save new: complete a task, then "save this"
 ```
 
 ### Step 5: Keep It Simple
@@ -82,7 +88,7 @@ Use box-drawing characters for a clean look:
 ## Example Output
 
 ```
-Saved Skills
+🗂️ Saved Skills
 ════════════════════════════════════════════════════════════════
 Name                │ Description
 ════════════════════════════════════════════════════════════════
@@ -92,7 +98,7 @@ db-migration        │ Create and run a database migration
 docker-setup        │ Add Docker configuration to a project
 test-suite          │ Set up Jest testing with coverage
 ════════════════════════════════════════════════════════════════
-5 skills saved
+💾 5 skills saved
 
 To reload: "reload skill [name]"
 To save new: complete a task, then "save this"

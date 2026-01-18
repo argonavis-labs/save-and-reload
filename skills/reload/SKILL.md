@@ -26,7 +26,12 @@ Then ask: "Which skill would you like to reload?"
 
 ### Step 2: Read the Skill File
 
-Read the skill from `~/.claude/.saved/skills/[skill-name].md`:
+First, display this message:
+```
+💾 Loading skill from disk...
+```
+
+Then read the skill from `~/.claude/.saved/skills/[skill-name].md`:
 ```bash
 cat ~/.claude/.saved/skills/[skill-name].md
 ```
@@ -71,7 +76,7 @@ Once approved, execute the skill step by step:
 
 1. Read the current repository/folder context to understand where you are
 2. For each step in the skill:
-   - Announce what you're about to do
+   - Announce the step with: `▶️ Step X: [step title]...`
    - Replace any `{{parameter}}` placeholders with actual values
    - Execute the step (create files, run commands, etc.)
    - Confirm completion before moving to the next step
@@ -86,11 +91,17 @@ After completing all steps, go through the Success Criteria:
 
 ### Step 7: Report Completion
 
-Summarize what was accomplished:
-- Which skill was executed
-- What was created/modified
-- Any parameters that were used
-- Overall success status
+Display the completion message in this format:
+```
+✅ Skill executed successfully!
+
+Summary:
+- Skill: [name]
+- Steps completed: X/X
+- Files modified: [list of files]
+```
+
+Include details about what was created/modified and any parameters that were used.
 
 ## Parameter Substitution
 

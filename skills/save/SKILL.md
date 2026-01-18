@@ -20,7 +20,12 @@ mkdir -p ~/.claude/.saved/skills
 
 ### Step 1: Acknowledge and Analyze
 
-Acknowledge the save request and analyze what was accomplished in this session. Look for:
+First, display this message to the user:
+```
+Summarizing session to be saved... 💾
+```
+
+Then analyze what was accomplished in this session. Look for:
 - What task was completed
 - What files were created or modified
 - What tools/commands were used
@@ -112,10 +117,14 @@ SKILL_EOF
 
 ### Step 6: Confirm
 
-Tell the user:
-- The skill has been saved
-- The full file path
-- How to use it: "Say 'reload skill [skill-name]' or 'list my saved skills' to see all your skills"
+Display the success message in this format:
+```
+💾 Successfully saved!
+File path: ~/.claude/.saved/skills/[skill-name].md
+
+To reload: "reload skill [skill-name]"
+To see all: "list my saved skills"
+```
 
 ## Parameter Placeholder Syntax
 
