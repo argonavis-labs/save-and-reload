@@ -20,8 +20,10 @@ Save your Claude Code sessions as reusable skills. Reload them anytime.
 
 ## Install
 
-```bash
-claude /install https://github.com/argonavis-labs/save-and-reload
+In Claude Code, run:
+```
+/plugin marketplace add argonavis-labs/save-and-reload
+/plugin install save-and-reload
 ```
 
 ## Usage
