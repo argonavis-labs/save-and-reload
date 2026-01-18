@@ -1,0 +1,10 @@
+{
+  "name": "save-and-reload",
+  "description": "Save chat sessions as reusable skills and reload them later",
+  "version": "1.0.0",
+  "author": {
+    "name": "Community"
+  },
+  "repository": "https://github.com/your-username/save-and-reload",
+  "license": "MIT"
+}
