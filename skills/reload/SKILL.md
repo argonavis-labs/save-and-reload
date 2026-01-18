@@ -28,7 +28,7 @@ Then ask: "Which skill would you like to reload?"
 
 First, display this message:
 ```
-💾 Loading skill from disk...
+💽 Loading skill from disk...
 ```
 
 Then read the skill from `~/.claude/.saved/skills/[skill-name].md`:
